@@ -1,0 +1,45 @@
+.home-menu {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: none;
+    background: transparent;
+    transition: background 0.2s;
+}
+
+.pure-menu.pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+    text-transform: none;
+}
+
+.home-menu a {
+    color: white;
+    transition: background 0.2s;
+}
+.home-menu li a:hover,
+.home-menu li a:focus,
+.selected {
+    background: hsla(0,0%,100%,.15);
+    border: 1px;
+    border-radius: 5px;
+}
+
+@media (min-width: 48em) {
+    /* We can align the menu header to the left, but float the
+    menu items to the right. */
+    .home-menu {
+        text-align: left;
+    }
+
+    .home-menu ul {
+        float: right;
+    }
+}
