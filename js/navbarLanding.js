@@ -1,6 +1,5 @@
 var navbar = document.getElementById("navbar");
-var splashHeight = document.getElementById("splashScreen").clientHeight
-    - navbar.clientHeight;
+var splashHeight = window.innerHeight - navbar.clientHeight;
 
 window.onscroll = function() {navbarScroll()};
 

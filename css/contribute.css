@@ -1,0 +1,29 @@
+.splash {
+    width: 95%;
+}
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+form {
+    width: 100%;
+}
+
+.ribbon h2, .ribbon h3 {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    font-weight: 500;
+}
+
+.l-box-lrg a {
+    color: #34495e;
+    text-decoration: none;
+}
+
+.l-box-lrg a:hover {
+    text-decoration: underline;
+}

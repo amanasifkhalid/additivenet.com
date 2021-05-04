@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Contribute to AdditiveNet.">
+        <title>AdditiveNet &ndash; Contribute</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css">
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/grids-responsive-min.css">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link rel="stylesheet" href="../css/contribute.css">
+        <script defer="" src="../js/navbar.js"></script>
+        <script defer="" src="../js/uploadUI.js"></script>
+    </head>
+    <body>
+
+    <div class="header">
+        <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed" id="navbar">
+            <a class="pure-menu-heading" href="#">AdditiveNet</a>
+
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item"><a href="../index.html" class="pure-menu-link">Home</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Datasets</a></li>
+                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Models</a></li>
+                <li class="pure-menu-item selected"><a href="#" class="pure-menu-link">Contribute</a></li>
+                <li class="pure-menu-item"><a href="team.html" class="pure-menu-link">Team</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="splash-container" id="splashScreen">
+        <div class="splash">
+            <h1 class="splash-head">Contribute to AdditiveNet</h1>
+            <p class="splash-subhead">Share your findings with us. Improve AM for everyone.</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="ribbon l-box-lrg pure-g">
+            <div class="pure-u-1">
+                <h2>Data Submission Form</h2>
+            </div>
+            <form action="https://formsubmit.co/additivenet@gmail.com" method="POST" enctype="multipart/form-data">
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <h3>Enter your name</h3>
+                    <input type="text" name="name" placeholder="Albert Einstein" required>
+                    <h3>Enter your email</h3>
+                    <input type="email" name="email" placeholder="einstein@princeton.edu" required>
+                    <h3>Select data type</h3>
+                    <select name="data-type" id="dropdown" required>
+                        <option hidden disabled selected value>-- Select an option --</option>
+                        <option value="csv-file">CSV File</option>
+                        <option value="thermal">Thermal Data</option>
+                        <option value="optical">Optical Data</option>
+                        <option value="acoustic">Acoustic Signals</option>
+                        <option value="CT-scanning-images">CT Scanning Images</option>
+                    </select>
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2">
+                    <h3>Upload your data</h3>
+                    <input type="file" name="data" multiple>
+                    <p id="typeMsg"></p>
+                    <h3>Description</h3>
+                    <textarea name="description" placeholder="Briefly describe your data."></textarea>
+                    <h3></h3>
+                    <button type="submit">Submit</button>
+                </div>
+                <input type="hidden" name="_replyto">
+                <input type="hidden" name="_next" value="confirmation.html">
+                <input type="hidden" name="_subject" value="AdditiveNet Submission">
+                <input type="hidden" name="_template" value="box">
+                <input type="text" name="_honey" style="display:none">
+            </form>
+        </div>
+        <div class="l-box-lrg is-center">
+            <h2 class="content-head">Looking for other ways to contribute?</h2>
+            <p>Consider helping us out on <a href="https://github.com/BaratiLab" target="_blank">GitHub.</a></p>
+        </div>
+        <div class="footer l-box is-center">
+            Made by the <a id="labLink" href="https://sites.google.com/view/barati" target="_blank">Mechanical and AI Lab</a> at Carnegie Mellon University.
+        </div>
+    </div>
+    </body>
+</html>
